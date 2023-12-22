@@ -1,0 +1,50 @@
+.TH INTERNSCTL 1 "December 2023" "internsctl v0.1.0"
+.SH NAME
+internsctl \- custom Linux command for operations
+
+.SH SYNOPSIS
+.B internsctl
+[\fIOPTIONS\fP] \fICOMMAND\fP [\fIARGS\fP]...
+
+.SH DESCRIPTION
+This tool provides various functionalities to manage system information and users on a Linux system.
+
+.SH OPTIONS
+.TP
+.BR --help
+Show usage information.
+
+.TP
+.BR --version
+Show version information.
+
+.SH COMMANDS
+.TP
+.B cpu getinfo
+Get CPU information.
+
+.TP
+.B memory getinfo
+Get memory information.
+
+.TP
+.B user create <username>
+Create a new user on the system.
+
+.TP
+.B user list
+List all regular users on the system.
+
+.TP
+.BR user list --sudo-only
+List all users with sudo permissions.
+
+.TP
+.B file getinfo <filename>
+Get information about a file.
+
+.SH AUTHOR
+Your Name <your@email.com>
+
+.SH SEE ALSO
+ls(1), lscpu(1), free(1), adduser(8)
